@@ -14,7 +14,7 @@ module ActiveMerchant #:nodoc:
         
         # Overwrite this if you want to change the Paypal production url
         mattr_accessor :production_url 
-        self.production_url = 'https://hpp.realexpayments.com/pay' 
+        self.production_url = 'https://hpp.realexpayments.com/pay'
         
         def self.service_url
           mode = ActiveMerchant::Billing::Base.integration_mode

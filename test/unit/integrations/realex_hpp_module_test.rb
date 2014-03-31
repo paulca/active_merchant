@@ -4,7 +4,7 @@ class RealexHppModuleTest < Test::Unit::TestCase
   include ActiveMerchant::Billing::Integrations
   
   def test_notification_method
-    assert_instance_of Paypal::Notification, Paypal.notification('name=cody', {})
+    assert_instance_of RealexHpp::Notification, RealexHpp.notification('name=cody', {})
   end
 
   def test_test_mode
